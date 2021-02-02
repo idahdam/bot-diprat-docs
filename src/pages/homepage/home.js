@@ -1,12 +1,16 @@
-import React from 'react'
-
+import React from 'react';
+import { Container, Button } from '../../globalStyles';
+import { Data } from './data.js'
 
 const Home = () => {
     return (
         <>
-        	<div>
-        		Hello! This is a documentation for bot diprat. I'm making this by myself on my spare time so relax. 
-        	</div>
+        	<Container>
+        	<br/>
+       			Site in the making. {Data.body}
+        	</Container>
+        	<br/>
+        	<Button>{Data.button}</Button>
         </>
     )
 }
