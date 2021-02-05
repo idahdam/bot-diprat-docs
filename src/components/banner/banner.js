@@ -9,7 +9,7 @@ const Banner = ({data}) => {
             <BannerImage>
                 <BannerText>
                     <BannerHeading>
-                        {data.title}<br/>
+                        {data.title}
                     </BannerHeading>
                     <BannerDesc>
                         {data.body}
