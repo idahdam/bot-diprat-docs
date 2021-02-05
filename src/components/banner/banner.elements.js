@@ -6,6 +6,7 @@ import { Button } from '../../globalStyles';
 export const BannerImage = styled.div`
     div{
         padding-top: 1em;
+        padding-bottom: 1em;
         height: 25%;
         background-image: url(${BannerBackground});
         background-position: center; /* Center the image */
