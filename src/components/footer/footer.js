@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <FooterContainer>
                 <FooterText>
-                    ANJING LAH HAMAS KENAPA KETAWA BANGSAT
+                    Footer. 
                 </FooterText>
             </FooterContainer>
         </>

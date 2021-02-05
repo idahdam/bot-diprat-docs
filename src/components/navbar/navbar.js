@@ -43,10 +43,10 @@ const Navbar = () => {
                                 <NavLinks to="/">Home</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/yourMom">Commands</NavLinks>
+                                <NavLinks to="/commands">Commands</NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/yourSister">Submit Ideas</NavLinks>
+                                <NavLinks to="/submit-ideas">Submit Ideas</NavLinks>
                             </NavItem>
                         </NavMenu>
                         

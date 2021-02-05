@@ -53,4 +53,7 @@ export const Button = styled.button`
     }
 `
 
+export const Line = styled.hr`
+    border: 1px solid #101522;
+`
 export default GlobalStyle;
