@@ -1,16 +1,14 @@
-import React from 'react';
-import { Container, Button } from '../../globalStyles';
-import { Data } from './data.js'
+import React, { useState } from 'react';
+import Banner from '../../components/banner/banner';
+import { BannerData } from './data'
 
 const Home = () => {
+    const [bannerData, setBannerData] = useState(BannerData);
     return (
         <>
-        	<Container>
+			<br/>
+			<Banner data={bannerData}/>			
         	<br/>
-       			Site in the making. {Data.body}
-        	</Container>
-        	<br/>
-        	<Button>{Data.button}</Button>
         </>
     )
 }

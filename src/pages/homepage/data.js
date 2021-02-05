@@ -1,5 +1,5 @@
-export const Data = {
-	"title" : "Bot Diprat",
-	"body" : "Wanna add this bot to your server? Start by clicking the button below!",
-	"button" : "ADD THIS BOT"
+export const BannerData = {
+		"title" : "Bot Diprat",
+		"body" : "I dunno why I'm still doing this but this is fun lmao",
+		"button" : "Add this bot to your discord server!"
 };

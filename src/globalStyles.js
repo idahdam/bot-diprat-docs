@@ -1,8 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
-	font-family: 'Times New Roman', serif;
+	font-family: 'Roboto', sans-serif;
 	box-sizing: border-none;
 	margin: 0;
 	padding: 0;
@@ -27,7 +28,7 @@ export const Container = styled.div`
 export const Button = styled.button`
     margin-left: 2em;
     border-radius: 4px;
-    background: ${({primary}) => (primary ? '#811313' : '#811313')};
+    background: #101522;
     white-space: nowrap;
     padding: ${({big}) => (big ? '12px 64px' : '10px 20px')};
     color: #fff;
@@ -38,14 +39,13 @@ export const Button = styled.button`
     transition: all 0.3s ease-out;
     &:hover {
         transition: all 0.3s ease-out;
-        color: grey;
         border-bottom: 6px solid white;
         border-top: 6px solid grey;
         transition: all 0.3s ease-out;
         border-top: 6px solid transparent;
         border-bottom: 6px solid transparent;   
         background: #fff;
-        background: ${({primary}) => (primary ? '#811313' :'#811313')};
+        background: ${({primary}) => (primary ? '#101522' :'#101522')};
          
     }
     @media screen and (max-width: 960px){
