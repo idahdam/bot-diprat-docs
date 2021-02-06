@@ -24,16 +24,30 @@ export const BannerText = styled.div`
 `;
 
 export const BannerButton = styled(Button)`
+    margin: auto;
     margin-bottom: 2.75rem;
+
+    @media screen and (max-width: 960px){
+        width: auto;
+        font-size: 1rem;
+    }
 `
 
 export const BannerHeading = styled.h1`
     padding-top: 1rem;
     font-size: 5rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 960px){
+        font-size: 3.75rem;
+    }
 `
 
 export const BannerDesc = styled.p`
     font-size: 1.5rem;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 960px){
+        font-size: 1.125rem;
+    }
 `

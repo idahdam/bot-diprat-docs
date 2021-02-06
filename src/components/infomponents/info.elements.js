@@ -36,6 +36,10 @@ export const SectionContainer = styled(Container)`
 export const SectionBodyExpl = styled.p`
     font-size: 1rem;
     margin-left: 1.75rem;
+
+    @media screen and (max-width: 960px){
+        padding-right: 1rem;
+    }
 `
 
 export const SectionViewAllButton = styled(Button)`
