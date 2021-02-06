@@ -61,11 +61,12 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 960px){
         display:flex;
         flex-direction: column;
-        width: 100%;
+        width: 45%;
         height: 90vh;
         position: absolute;
         top: 80px;
-        left: ${({click}) => (click ? 0 : '-100%')};
+        // transform: ${({click}) => (click ? 'translate(0%, 0%)' : 'translate(0%, 0%)')};
+        left: ${({click}) => (click ? '0%' : '-200%')};
         opacity: 1;
         transition: all 0.5s ease;
         background: #101522;
@@ -74,17 +75,18 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+    margin-bottom: 1rem;
     border-bottom: 2px solid transparent;
 
     &:hover{
-        border-bottom: 2px solid #4b59f7;
+        border-bottom: 2px solid white;
     }
 
     @media screen and (max-width: 960px){
         width: 100%;
-
+        margin-right: 2rem;
         &:hover{
-            border: none;
+            
         }
     }
 `
@@ -99,7 +101,7 @@ export const NavLinks = styled(Link)`
 
     @media screen and (max-width: 960px){
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 2rem 2rem 0;
         width: 100%;
         display: table;
 
