@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { Section, Banner } from '../../components';
-import { BannerData, Command } from './data'
+import { Banner, Infomponents, SocialsComponent } from '../../components';
+import { BannerData, SubmitIdeas, SubmitIdeasHeader } from './data'
 
 const Home = () => {
     const [bannerData, setBannerData] = useState(BannerData);
     return (
         <>
 			<Banner data={bannerData}/>	
-            {/* <Section data = {Command}/>		 */}
+            <Infomponents data={SubmitIdeas} header={SubmitIdeasHeader}/>
+            <SocialsComponent/>
         </>
     )
 }

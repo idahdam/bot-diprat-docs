@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <FooterContainer>
                 <FooterText>
-                    Footer. 
+                    Made out of boredom. Hadi 2021.
                 </FooterText>
             </FooterContainer>
         </>

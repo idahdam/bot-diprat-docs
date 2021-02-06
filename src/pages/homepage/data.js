@@ -15,5 +15,6 @@ export const InfoData =
 	[{command:'Q: Why are you doing this?', expl:'Bored. I mean it seems like I have plenty of time building the web and the bot by myself. I just... don`t know what to do, really.  :/ '},
 	{command:'Q: What kind of bot is this?', expl:'I wish I knew.'},
 	{command:'Q: Can I contribute?', expl:'Sure! Leave your thoughts on the `Submit Ideas` section on the Navbar.'},
-	{command: 'Q: Socials?', expl: 'Check out the footer mate.'}
 ]
+
+export const InfoDataHead = "> F.A.Q."

@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { Container } from '../../globalStyles'
 import { SectionBlockquoteExpl, SectionRouter, SectionContainer, SectionHeader, SectionViewAllButton, SectionContainerBody, SectionBodyCommand, SectionBodyExpl } from './info.elements'
 
-const Section = ({data}) => {
+const Section = ({data, header}) => {
     return(
         <>
             <SectionContainer>
                 <SectionHeader>
-                    > F.A.Q.  
+                    {header} 
                 </SectionHeader>
                 <SectionContainerBody>
                     {data.map((data, index) => {    
