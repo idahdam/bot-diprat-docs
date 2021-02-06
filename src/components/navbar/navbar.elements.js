@@ -61,14 +61,13 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 960px){
         display:flex;
         flex-direction: column;
-        width: 45%;
+        width: 100%;
         height: 90vh;
         position: absolute;
         top: 80px;
-        // transform: ${({click}) => (click ? 'translate(0%, 0%)' : 'translate(0%, 0%)')};
         left: ${({click}) => (click ? '0%' : '-200%')};
         opacity: 1;
-        transition: all 0.5s ease;
+        transition: all 0.5s ease-in-out;
         background: #101522;
     }
 `
@@ -79,14 +78,18 @@ export const NavItem = styled.li`
     border-bottom: 2px solid transparent;
 
     &:hover{
+        border-bottom: 2px solid #101522;
+        transition: all 1s ease;
         border-bottom: 2px solid white;
     }
 
     @media screen and (max-width: 960px){
-        width: 100%;
-        margin-right: 2rem;
+        width: 25%;
+        margin-right: 5rem;
         &:hover{
-            
+            border-bottom: 2px solid #101522;
+            transition: all 1s ease;
+            border-bottom: 2px solid white;
         }
     }
 `
