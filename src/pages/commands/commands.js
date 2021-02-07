@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { Section, Banner, CommandsComponent } from '../../components';
-import { BannerData, Math, Routes } from './data'
+import React from 'react';
+import { Banner, CommandsComponent } from '../../components';
+import { BannerData, Math, FML, Random, CommandTitles, Basic } from './data'
 
 const Home = () => {
-    const [bannerData, setBannerData] = useState(BannerData);
     return (
         <>
-			<Banner data={bannerData}/>	
-            <CommandsComponent routes={Routes} math={Math}/>
+			<Banner data={BannerData}/>	
+            <CommandsComponent basic = {Basic} fml = {FML} random = {Random} math={Math} title={CommandTitles}/>
         </>
     )
 }

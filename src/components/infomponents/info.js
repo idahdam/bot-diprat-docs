@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import { Container } from '../../globalStyles'
-import { SectionBlockquoteExpl, SectionRouter, SectionContainer, SectionHeader, SectionViewAllButton, SectionContainerBody, SectionBodyCommand, SectionBodyExpl } from './info.elements'
+import React from 'react'
+import { SectionContainer, SectionHeader, SectionContainerBody, SectionBodyCommand, SectionBodyExpl } from './info.elements'
 
 const Section = ({data, header}) => {
     return(

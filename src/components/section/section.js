@@ -1,12 +1,7 @@
-import React, { useState } from 'react'
-import { Container } from '../../globalStyles'
-import { SectionBlockquoteExpl, SectionRouter, SectionContainer, SectionHeader, SectionViewAllButton, SectionContainerBody, SectionBodyCommand, SectionBodyExpl } from './section.elements'
+import React from 'react';
+import { SectionRouter, SectionContainer, SectionHeader, SectionContainerBody, SectionBodyCommand, SectionBodyExpl } from './section.elements'
 
 const Section = ({data}) => {
-    const [first, setFirst] = useState(false)
-    const [second, setSecond] = useState(false)
-    const [third, setThird] = useState(false)
-    const [fourth, setFourth] = useState(false)
     return(
         <>
             <SectionContainer>

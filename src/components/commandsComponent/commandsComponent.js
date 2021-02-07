@@ -1,55 +1,86 @@
-import React from 'react'
+import React from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Link } from 'react-router-dom';
+import './styles.css';
+import { CommandSideBar } from './commands.elements'; 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { CommandContainer, CommandSideBar, CommandContent, CommandUnorderedList } from './commands.elements';
 
-const commandsComponent = ({routes, data}) => {
+const commandsComponent = ({title, basic, random, math, fml}) => {
     return(
-        <>
-    <Router>
-      <CommandContainer>
-        <CommandSideBar>
-          <CommandUnorderedList>
-            <li>
-              <Link to="/Math">Math</Link>
-            </li>
-            <li>
-              <Link to="/Random">Random</Link>
-            </li>
-            <li>
-              <Link to="/FML">FML</Link>
-            </li>
-          </CommandUnorderedList>
+       <>
+          <Tabs>
+            <TabList>            
+              {title.map((data, index) => {    
+                    return(
+                        <>
+                        <Tab key={index}>
+                            <h4>{data.title}</h4>
+                        </Tab>
+                        </>
+                    )
+                })}
+            </TabList>
 
-          <Switch>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                data={data}
-                children={<route.sidebar />}
-              />
-              
-            ))}
-          </Switch>
-        </CommandSideBar>
+            <TabPanel>
+            {basic.map((data, index) => {    
+                    return(
+                        <>
+                        
+                          <div key={index} className="panel-content">
+                            <h3>{data.command}</h3>
+                            <p>{data.expl}</p>
+                          </div>
+                        
+                        </>
+                    )
+                })}
+            </TabPanel>
 
-        <CommandContent>
-          <Switch>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.main />}
-              />
-            ))}
-          </Switch>
-        </CommandContent>
-      </CommandContainer>
-    </Router>
-        </>
+            <TabPanel>
+            {math.map((data, index) => {    
+                    return(
+                        <>
+                        
+                          <div key={index} className="panel-content">
+                            <h3>{data.command}</h3>
+                            <p>{data.expl}</p>
+                          </div>
+                        
+                        </>
+                    )
+                })}
+              </TabPanel>
+              <TabPanel>
+                {random.map((data, index) => {    
+                        return(
+                            <>
+                            
+                              <div key={index} className="panel-content">
+                                <h3>{data.command}</h3>
+                                <p>{data.expl}</p>
+                              </div>
+                            
+                            </>
+                        )
+                    })}
+              </TabPanel>
+              <TabPanel>
+                {fml.map((data, index) => {    
+                        return(
+                            <>
+                            
+                              <div key={index} className="panel-content">
+                                <h3>{data.command}</h3>
+                                <p>{data.expl}</p>
+                              </div>
+                            
+                            </>
+                        )
+                    })}
+              </TabPanel>
+          </Tabs>
+          <br/><br/><br/><br/><br/>
+       </>
     )
 };
 

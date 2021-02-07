@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 import BannerBackground from '../../images/bannerImages/banner.jpg';
 import { Button } from '../../globalStyles';
 
@@ -26,6 +25,7 @@ export const BannerText = styled.div`
 export const BannerButton = styled(Button)`
     margin: auto;
     margin-bottom: 2.75rem;
+    font-family: 'Segoe UI';
 
     @media screen and (max-width: 960px){
         width: auto;

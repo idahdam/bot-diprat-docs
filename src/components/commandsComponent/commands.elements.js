@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 export const CommandSideBar = styled.div`
     padding-right: 5rem;

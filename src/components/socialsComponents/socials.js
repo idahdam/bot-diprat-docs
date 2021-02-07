@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { SocialContainer, SocialsHeader } from './socials.components';
+import React from 'react'
+import { SocialContainer, SocialWrapper, SocialsHeader, SocialLink, SocialLogoWrapper } from './socials.components';
+import { FaTwitter } from 'react-icons/fa';
 
 const Socials = () => {
     return(
@@ -8,6 +9,11 @@ const Socials = () => {
                 <SocialsHeader>
                     > Socials
                 </SocialsHeader>
+                <SocialWrapper>
+                    <SocialLogoWrapper><FaTwitter/></SocialLogoWrapper>
+                    <SocialLink href="https://twitter.com/idahdam">Twitter</SocialLink>
+                </SocialWrapper>
+                <br/><br/><br/><br/>
             </SocialContainer>
         </>
     )
