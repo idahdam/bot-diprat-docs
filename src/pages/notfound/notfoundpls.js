@@ -1,9 +1,11 @@
 import React from 'react';
-import { NotFound } from '../../components';
+import { NotFound, Banner } from '../../components';
+import { BannerData } from './data';
 
 const NotFoundComponent = () => {
     return(
         <>
+            <Banner data={BannerData}/>	
             <NotFound/>
         </>
     )
