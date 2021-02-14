@@ -12,6 +12,19 @@ export const SocialContainer = styled(Container)`
     width: 88%;
 `
 
+export const SocialRow = styled.div`
+    justify-content: center;
+    content: "";
+    display: table;
+    clear: both;
+`
+
+export const SocialCol = styled.div`
+    padding: 1rem;
+    float: left;
+    width: 33.33%;
+`
+
 export const SocialWrapper = styled.div`
     
 `
@@ -22,5 +35,5 @@ export const SocialLogoWrapper = styled.div`
 `
 
 export const SocialLink = styled.a`
-    font-size: 2rem;
+    font-size: 1.5rem;
 `
