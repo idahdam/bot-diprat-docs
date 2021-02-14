@@ -45,6 +45,9 @@ const Navbar = () => {
                                 <NavLinks to="/commands">Commands</NavLinks>
                             </NavItem>
                             <NavItem>
+                                <NavLinks to="/releases">Releases</NavLinks>
+                            </NavItem>
+                            <NavItem>
                                 <NavLinks to="/submit-ideas">Submit Ideas</NavLinks>
                             </NavItem>
                         </NavMenu>

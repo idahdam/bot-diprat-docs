@@ -5,10 +5,11 @@ export const BannerData = {
 };
 
 export const Command = 
-	[{command:'COMMAND 1', expl:'EXPLANATION 1 LOREM IPSUM DOLOR SIT AMET OR WHATEVER THE FUCK IT WAS 1'},
-	{command:'COMMAND 2', expl:'EXPLANATION 2 LOREM IPSUM DOLOR SIT AMET OR WHATEVER THE FUCK IT WAS 2'},
-	{command:'COMMAND 3', expl:'EXPLANATION 3 LOREM IPSUM DOLOR SIT AMET OR WHATEVER THE FUCK IT WAS 3'},
-	{command: 'COMMAND 4', expl: 'EXPLANATION 4 LOREM IPSUM DOLOR SIT AMET OR WHATEVER THE FUCK IT WAS 4'}
+[
+	{command:'~ping', expl:'will return `Ping lo sebesar {number}ms.`'},
+	{command:'~ribut', expl:'Will play the boxing bell sound.'},
+	{command:'~yoou', expl:'Will play the `YOOOOU`.'},
+	{command:'~megalovania', expl:'Will play megalovania.'},
 ]
 
 export const InfoData = 
