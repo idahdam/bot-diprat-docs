@@ -1,7 +1,7 @@
 export const BannerData = {
     "title" : "Submit Ideas",
     "body" : "Tell me what you want from the bot!",
-    "button" : "Add this bot to your discord server!"
+    "button" : "Bot is currently offline."
 };
 
 export const Command = 
